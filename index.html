@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body{
             width: 100%;
             height: 100vh;
@@ -21,21 +25,22 @@
         .container p{
             background-color: white;
             padding: 10px;
-            height: 100px;
+            height: 150px;
             font-size: large;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>copy the below text!!</h1>
+        <h1>👇 copy the below text and paste it somewhere!! 👇</h1>
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio necessitatibus dignissimos aliquid dolorem corrupti delectus saepe itaque! Velit impedit omnis natus totam corporis veniam, voluptates corrupti eos placeat! Suscipit.</p>
     </div>
 
     <script>
         document.addEventListener("copy" , (e) => {
-            e.clipboardData.setData("text/plain" , "this is the text that you copied");
+            e.clipboardData.setData("text/plain" , "nhi kar payega bhai..😂😂");
             e.preventDefault();
         });
     </script>
