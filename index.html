@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(221, 166, 13);
+            overflow: hidden;
+        }
+        .container h1{
+            background-color: red;
+            padding: 5px;
+        }
+        .container p{
+            background-color: white;
+            padding: 10px;
+            height: 100px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>copy the below text!!</h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio necessitatibus dignissimos aliquid dolorem corrupti delectus saepe itaque! Velit impedit omnis natus totam corporis veniam, voluptates corrupti eos placeat! Suscipit.</p>
+    </div>
+
+    <script>
+        document.addEventListener("copy" , (e) => {
+            e.clipboardData.setData("text/plain" , "this is the text that you copied");
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
